@@ -4,7 +4,6 @@ figlet "TPLINK722N"
 echo "By:FrankoSav"
 
 function menu() {
-    clear
     echo "Menu:"
     echo "1) Instalar requerimientos necesarios"
     echo "2) Instalar TPLINK722NV3"
