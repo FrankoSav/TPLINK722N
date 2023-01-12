@@ -8,8 +8,7 @@ function menu() {
     echo "1) Instalar requerimientos necesarios"
     echo "2) Instalar TPLINK722NV3"
     echo "3) Salir"
-    read - p "Selecciona una opción: " option
-    
+    read -p "Selecciona una opción: " option   
     case $option in
         1) requirements;;
         2) install;;
@@ -42,5 +41,5 @@ function install() {
 
 while true; do
     menu
-    read - p "[+]Presione Enter para continuar"
+    read -p "[+]Presione Enter para continuar"
 done
