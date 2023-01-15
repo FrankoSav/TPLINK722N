@@ -13,7 +13,7 @@ function menu() {
         1) requirements;;
         2) install;;
         3) exit;;
-        *) echo "Opción inválida, selecciona una opción válida";;
+        *) echo "[+]Opción inválida, selecciona una opción válida";;
     esac
 }
 
@@ -30,11 +30,11 @@ function install() {
     sleep 1
     sudo apt-get update -y
     sudo apt-get install -y cmake cmake-data pkg-config python3-sphinx libcairo2-dev libxcb1-dev libxcb-util0-dev libxcb-randr0-dev libxcb-composite0-dev python3-xcbgen xcb-proto libxcb-image0-dev libxcb-ewmh-dev libxcb-icccm4-dev libxcb-xkb-dev libxcb-xrm-dev libxcb-cursor-dev libasound2-dev libpulse-dev libjsoncpp-dev libmpdclient-dev libcurl4-openssl-dev libnl-genl-3-dev bc dkms
-    git clone https: // github.com/aircrack-ng/rtl8188eus
-    cd rtl8188eus /
+    git clone https://github.com/aircrack-ng/rtl8188eus
+    cd rtl8188eus/
     make
     sudo make install
-    echo "blacklist r8188eu" | sudo tee -a / etc/modprobe.d/realtek.conf
+    echo "blacklist r8188eu" | sudo tee -a /etc/modprobe.d/realtek.conf
     sudo apt-get upgrade -y
     echo "[+]Instalado, reinicie por favor"
 }
